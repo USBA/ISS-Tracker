@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct ContentView: View {
+    @Environment(\.scenePhase) private var scenePhase
     @ObservedObject var issViewModel = ISSViewModel()
     @ObservedObject var aboardDataViewModel = AboardDataViewModel()
     
@@ -33,17 +34,13 @@ struct ContentView: View {
                     .padding(.bottom, 30)
                     
                 }
+                .onChange(of: scenePhase) { phase in
+                    if phase == .active {
+                        setTheRegionOnActive(issData: issData)
+                    }
+                }
                 .onAppear {
-                    region = MKCoordinateRegion(
-                        center: CLLocationCoordinate2D(
-                            latitude: issData.latitude,
-                            longitude: issData.longitude
-                        ),
-                        span: MKCoordinateSpan(
-                            latitudeDelta: 80,
-                            longitudeDelta: 80
-                        )
-                    )
+                    setTheRegionOnAppear(issData: issData)
                 }
                 
             } else {
@@ -51,14 +48,48 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            aboardDataViewModel.getData()
-            
-            Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
-                issViewModel.getData()
-            }
-            
-//            // Test Data
-//            issViewModel.currentData = [ISS(id: 25544, name: "iss", latitude: 50.11496269845, longitude: 118.07900427317, altitude: 408.05526028199, velocity: 27635.971970874)]
+            getData()
+        }
+    }
+    
+    func getData() {
+        aboardDataViewModel.getData()
+        
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
+            issViewModel.getData()
+        }
+        
+        //// Test Data
+        //issViewModel.currentData = [ISS(id: 25544, name: "iss", latitude: 50.11496269845, longitude: 118.07900427317, altitude: 408.05526028199, velocity: 27635.971970874)]
+    }
+    
+    func setTheRegionOnAppear(issData: ISS) {
+        withAnimation {
+            region = MKCoordinateRegion(
+                center: CLLocationCoordinate2D(
+                    latitude: issData.latitude,
+                    longitude: issData.longitude
+                ),
+                span: MKCoordinateSpan(
+                    latitudeDelta: 80,
+                    longitudeDelta: 80
+                )
+            )
+        }
+    }
+    
+    func setTheRegionOnActive(issData: ISS) {
+        withAnimation {
+            region = MKCoordinateRegion(
+                center: CLLocationCoordinate2D(
+                    latitude: issData.latitude,
+                    longitude: issData.longitude
+                ),
+                span: MKCoordinateSpan(
+                    latitudeDelta: region.span.latitudeDelta > 80 ? 80 : region.span.latitudeDelta < 30 ? 30 : region.span.latitudeDelta,
+                    longitudeDelta: region.span.longitudeDelta > 80 ? 80 : region.span.longitudeDelta < 30 ? 30 :region.span.longitudeDelta
+                )
+            )
         }
     }
 }
