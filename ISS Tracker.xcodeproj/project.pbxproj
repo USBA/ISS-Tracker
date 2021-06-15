@@ -19,7 +19,7 @@
 		0AD0AFDE267890A5004190BD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFDD267890A5004190BD /* MapView.swift */; };
 		0AD0AFE0267897C6004190BD /* PeopleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFDF267897C6004190BD /* PeopleButton.swift */; };
 		0AD0AFE52678A164004190BD /* Aboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFE42678A164004190BD /* Aboard.swift */; };
-		0AD0AFE72678A21A004190BD /* OnBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFE62678A21A004190BD /* OnBoardViewModel.swift */; };
+		0AD0AFE72678A21A004190BD /* AboardDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFE62678A21A004190BD /* AboardDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		0AD0AFDD267890A5004190BD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0AD0AFDF267897C6004190BD /* PeopleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleButton.swift; sourceTree = "<group>"; };
 		0AD0AFE42678A164004190BD /* Aboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aboard.swift; sourceTree = "<group>"; };
-		0AD0AFE62678A21A004190BD /* OnBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewModel.swift; sourceTree = "<group>"; };
+		0AD0AFE62678A21A004190BD /* AboardDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboardDataViewModel.swift; sourceTree = "<group>"; };
 		0AD0AFE82678A56A004190BD /* ISS-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ISS-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0AD0AFD726785807004190BD /* ISSViewModel.swift */,
-				0AD0AFE62678A21A004190BD /* OnBoardViewModel.swift */,
+				0AD0AFE62678A21A004190BD /* AboardDataViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 				0AD0AFE0267897C6004190BD /* PeopleButton.swift in Sources */,
 				0AD0AFE52678A164004190BD /* Aboard.swift in Sources */,
 				0AD0AFC826784B5F004190BD /* ISS_TrackerApp.swift in Sources */,
-				0AD0AFE72678A21A004190BD /* OnBoardViewModel.swift in Sources */,
+				0AD0AFE72678A21A004190BD /* AboardDataViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
