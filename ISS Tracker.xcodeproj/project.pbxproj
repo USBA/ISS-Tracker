@@ -11,6 +11,14 @@
 		0AD0AFCA26784B5F004190BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFC926784B5F004190BD /* ContentView.swift */; };
 		0AD0AFCC26784B61004190BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD0AFCB26784B61004190BD /* Assets.xcassets */; };
 		0AD0AFCF26784B61004190BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD0AFCE26784B61004190BD /* Preview Assets.xcassets */; };
+		0AD0AFD626785753004190BD /* ISS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFD526785753004190BD /* ISS.swift */; };
+		0AD0AFD826785807004190BD /* ISSViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFD726785807004190BD /* ISSViewModel.swift */; };
+		0AD0AFDA26788F80004190BD /* FocusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFD926788F80004190BD /* FocusButton.swift */; };
+		0AD0AFDC26788F96004190BD /* PositionDetailsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFDB26788F96004190BD /* PositionDetailsBar.swift */; };
+		0AD0AFDE267890A5004190BD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFDD267890A5004190BD /* MapView.swift */; };
+		0AD0AFE0267897C6004190BD /* PeopleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFDF267897C6004190BD /* PeopleButton.swift */; };
+		0AD0AFE52678A164004190BD /* Aboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFE42678A164004190BD /* Aboard.swift */; };
+		0AD0AFE72678A21A004190BD /* OnBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFE62678A21A004190BD /* OnBoardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		0AD0AFC926784B5F004190BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AD0AFCB26784B61004190BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AD0AFCE26784B61004190BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0AD0AFD526785753004190BD /* ISS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISS.swift; sourceTree = "<group>"; };
+		0AD0AFD726785807004190BD /* ISSViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSViewModel.swift; sourceTree = "<group>"; };
+		0AD0AFD926788F80004190BD /* FocusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusButton.swift; sourceTree = "<group>"; };
+		0AD0AFDB26788F96004190BD /* PositionDetailsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionDetailsBar.swift; sourceTree = "<group>"; };
+		0AD0AFDD267890A5004190BD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0AD0AFDF267897C6004190BD /* PeopleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleButton.swift; sourceTree = "<group>"; };
+		0AD0AFE42678A164004190BD /* Aboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aboard.swift; sourceTree = "<group>"; };
+		0AD0AFE62678A21A004190BD /* OnBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewModel.swift; sourceTree = "<group>"; };
+		0AD0AFE82678A56A004190BD /* ISS-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ISS-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +68,11 @@
 		0AD0AFC626784B5F004190BD /* ISS Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				0AD0AFE82678A56A004190BD /* ISS-Tracker-Info.plist */,
 				0AD0AFC726784B5F004190BD /* ISS_TrackerApp.swift */,
-				0AD0AFC926784B5F004190BD /* ContentView.swift */,
+				0AD0AFE12678A11E004190BD /* Models */,
+				0AD0AFE22678A125004190BD /* ViewModels */,
+				0AD0AFE32678A131004190BD /* Views */,
 				0AD0AFCB26784B61004190BD /* Assets.xcassets */,
 				0AD0AFCD26784B61004190BD /* Preview Content */,
 			);
@@ -65,6 +85,36 @@
 				0AD0AFCE26784B61004190BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0AD0AFE12678A11E004190BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0AFD526785753004190BD /* ISS.swift */,
+				0AD0AFE42678A164004190BD /* Aboard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0AD0AFE22678A125004190BD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0AFD726785807004190BD /* ISSViewModel.swift */,
+				0AD0AFE62678A21A004190BD /* OnBoardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0AD0AFE32678A131004190BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AD0AFC926784B5F004190BD /* ContentView.swift */,
+				0AD0AFDD267890A5004190BD /* MapView.swift */,
+				0AD0AFDB26788F96004190BD /* PositionDetailsBar.swift */,
+				0AD0AFD926788F80004190BD /* FocusButton.swift */,
+				0AD0AFDF267897C6004190BD /* PeopleButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD0AFDE267890A5004190BD /* MapView.swift in Sources */,
+				0AD0AFD826785807004190BD /* ISSViewModel.swift in Sources */,
 				0AD0AFCA26784B5F004190BD /* ContentView.swift in Sources */,
+				0AD0AFDA26788F80004190BD /* FocusButton.swift in Sources */,
+				0AD0AFDC26788F96004190BD /* PositionDetailsBar.swift in Sources */,
+				0AD0AFD626785753004190BD /* ISS.swift in Sources */,
+				0AD0AFE0267897C6004190BD /* PeopleButton.swift in Sources */,
+				0AD0AFE52678A164004190BD /* Aboard.swift in Sources */,
 				0AD0AFC826784B5F004190BD /* ISS_TrackerApp.swift in Sources */,
+				0AD0AFE72678A21A004190BD /* OnBoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +330,16 @@
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ISS-Tracker-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "ISS Tracker";
+				INFOPLIST_KEY_CFBundleName = "ISS Tracker";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +364,16 @@
 				DEVELOPMENT_TEAM = BJY4B596D6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ISS-Tracker-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = "ISS Tracker";
+				INFOPLIST_KEY_CFBundleName = "ISS Tracker";
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
