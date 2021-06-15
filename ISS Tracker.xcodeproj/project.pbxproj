@@ -343,9 +343,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ISS-Tracker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Spy on ISS";
 				INFOPLIST_KEY_CFBundleExecutable = "ISS Tracker";
 				INFOPLIST_KEY_CFBundleName = "ISS Tracker";
-				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_CFBundleVersion = 2;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,9 +378,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "ISS-Tracker-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Spy on ISS";
 				INFOPLIST_KEY_CFBundleExecutable = "ISS Tracker";
 				INFOPLIST_KEY_CFBundleName = "ISS Tracker";
-				INFOPLIST_KEY_CFBundleVersion = 1;
+				INFOPLIST_KEY_CFBundleVersion = 2;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
