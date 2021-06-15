@@ -19,11 +19,20 @@ struct PeopleButton: View {
                 Text(person.name)
             }
         } label: {
-            Label(aboard.number.formatted(), systemImage: "person.2.fill")
-                .foregroundColor(.secondary)
-                .padding(10)
-                .background(.regularMaterial)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+            if #available(iOS 15.0, *) {
+                Label(aboard.number.formatted(), systemImage: "person.2.fill")
+                    .foregroundColor(.secondary)
+                    .padding(10)
+                    .background(.regularMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+            } else {
+                // Fallback on earlier versions
+                Label("\(aboard.number)", systemImage: "person.2.fill")
+                    .foregroundColor(.secondary)
+                    .padding(10)
+                    .background(BlurView(effect: .systemMaterial))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+            }
         }
     }
 }

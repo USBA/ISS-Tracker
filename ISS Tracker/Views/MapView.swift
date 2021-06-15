@@ -16,12 +16,22 @@ struct MapView: View {
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: issMark) { mark in
             MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: mark.latitude, longitude: mark.longitude)) {
-                Text("🛰")
-                    .font(.largeTitle)
-                    .padding()
-                    .background(.thickMaterial)
-                    .clipShape(Circle())
-                    .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 0)
+                if #available(iOS 15.0, *) {
+                    Text("🛰")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(.thickMaterial)
+                        .clipShape(Circle())
+                        .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 0)
+                } else {
+                    // Fallback on earlier versions
+                    Text("🛰")
+                        .font(.largeTitle)
+                        .padding()
+                        .background(BlurView(effect: .systemMaterial))
+                        .clipShape(Circle())
+                        .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 0)
+                }
                 
             }
         }

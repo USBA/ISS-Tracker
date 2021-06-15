@@ -28,11 +28,20 @@ struct FocusButton: View {
                 }
             }
         } label: {
-            Image(systemName: "location.fill.viewfinder")
-                .foregroundColor(.secondary)
-                .padding(10)
-                .background(.regularMaterial)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+            if #available(iOS 15.0, *) {
+                Image(systemName: "location.fill.viewfinder")
+                    .foregroundColor(.secondary)
+                    .padding(10)
+                    .background(.regularMaterial)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+            } else {
+                // Fallback on earlier versions
+                Image(systemName: "location.fill.viewfinder")
+                    .foregroundColor(.secondary)
+                    .padding(10)
+                    .background(BlurView(effect: .systemMaterial))
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+            }
         }
     }
 }
