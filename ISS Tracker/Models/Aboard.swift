@@ -15,4 +15,5 @@ struct Aboard: Codable {
 
 struct Person: Codable, Hashable {
     var name: String
+    var craft: String
 }
