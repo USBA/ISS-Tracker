@@ -14,7 +14,7 @@ An iOS app to track the current location of the International Space Station (ISS
 - [Open Notify](http://open-notify.org/Open-Notify-API/)
   - Used this API to get the information about the people who are currently aboard the ISS.
   
-![ISSTrack1-iPhone_12_White_Hardware_Shell_Vertical_SCREEN__USEN@0 5x](https://user-images.githubusercontent.com/19838220/122054441-4ef88400-ce05-11eb-9da3-388eec922be3.png)
-![ISSTrack2-iPhone_12_White_Hardware_Shell_Vertical_SCREEN__USEN@0 5x@0 5x](https://user-images.githubusercontent.com/19838220/122054477-56b82880-ce05-11eb-94be-655f967b06af.png)
-![ISSTrack3-iPhone_12_White_Hardware_Shell_Vertical_SCREEN__USEN@0 5x@0 5x](https://user-images.githubusercontent.com/19838220/122054495-5ae44600-ce05-11eb-9635-87fd160ab4f3.png)
-![ISSTrack4-iPhone_12_White_Hardware_Shell_Vertical_SCREEN__USEN@0 5x@0 5x](https://user-images.githubusercontent.com/19838220/122054505-5f106380-ce05-11eb-9b8b-c0baa50a56ae.png)
+![ISSTrack1-iPhone_12_White_Hardware_Shell_Vertical_SCREEN__USEN@0 5x](https://user-images.githubusercontent.com/19838220/122055130-eeb61200-ce05-11eb-9a3e-188c0e8b4ba3.png)
+![ISSTrack2-iPhone_12_White_Hardware_Shell_Vertical_SCREEN__USEN@0 5x@0 5x](https://user-images.githubusercontent.com/19838220/122055157-f5dd2000-ce05-11eb-828b-43da1cdbec4d.png)
+![ISSTrack3-iPhone_12_White_Hardware_Shell_Vertical_SCREEN__USEN@0 5x@0 5x](https://user-images.githubusercontent.com/19838220/122055193-fe355b00-ce05-11eb-8155-bc397c96bfa1.png)
+![ISSTrack4-iPhone_12_White_Hardware_Shell_Vertical_SCREEN__USEN@0 5x@0 5x](https://user-images.githubusercontent.com/19838220/122055217-05f4ff80-ce06-11eb-8209-54c9d3e9d74f.png)
