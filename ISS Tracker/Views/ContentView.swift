@@ -23,8 +23,12 @@ struct ContentView: View {
                     MapView(region: $region, issMark: $issViewModel.currentData)
                     
                     VStack(alignment: .trailing, spacing: 10) {
-                        if let aboardData = aboardDataViewModel.aboardData {
-                            PeopleButton(aboard: aboardData)
+                        HStack {
+                            AboutMenu()
+                            Spacer()
+                            if let aboardData = aboardDataViewModel.aboardData {
+                                PeopleButton(aboard: aboardData)
+                            }
                         }
                         Spacer()
                         FocusButton(region: $region, issData: issData)
@@ -44,7 +48,7 @@ struct ContentView: View {
                 }
                 
             } else {
-                ProgressView()
+                LoadingView()
             }
         }
         .onAppear {
@@ -54,13 +58,21 @@ struct ContentView: View {
     
     func getData() {
         aboardDataViewModel.getData()
+        issViewModel.getData()
         
-        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
-            issViewModel.getData()
-        }
+        //// Use Test Data
+        //loadTestData()
+    }
+    
+    func loadTestData() {
+        // Test Data
+        issViewModel.currentData = [ISS(id: 25544, name: "iss", latitude: 50.11496269845, longitude: 118.07900427317, altitude: 408.05526028199, velocity: 27635.971970874)]
         
-        //// Test Data
-        //issViewModel.currentData = [ISS(id: 25544, name: "iss", latitude: 50.11496269845, longitude: 118.07900427317, altitude: 408.05526028199, velocity: 27635.971970874)]
+        let person1 = Person(name: "Edward Boldwin", craft: "ISS")
+        let person2 = Person(name: "Gordo Stevens", craft: "ISS")
+        let person3 = Person(name: "Danielle Poole", craft: "ISS")
+        let people : [Person] = [person1, person2, person3]
+        aboardDataViewModel.aboardData = Aboard(message: "People on ISS", number: 3, people: people)
     }
     
     func setTheRegionOnAppear(issData: ISS) {

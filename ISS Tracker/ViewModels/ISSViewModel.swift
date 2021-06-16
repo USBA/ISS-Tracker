@@ -21,21 +21,26 @@ class ISSViewModel: ObservableObject {
         let config = URLSessionConfiguration.default
         config.waitsForConnectivity = true
         
-        let task = URLSession(configuration: config).dataTask(with: url) { data, response, error in
-            guard let data = data else { return }
+        Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
+            print("Checked ISS data at... \(Date()))")
             
-            do {
-                let issData = try JSONDecoder().decode(ISS.self, from: data)
-                DispatchQueue.main.async {
-                    withAnimation {
-                        self.currentData = [issData]
-                    }
+            let task = URLSession(configuration: config).dataTask(with: url) { data, response, error in
+                guard let data = data else {
+                    return
                 }
-            } catch {
-                print(error)
+                do {
+                    let issData = try JSONDecoder().decode(ISS.self, from: data)
+                    DispatchQueue.main.async {
+                        withAnimation {
+                            self.currentData = [issData]
+                        }
+                    }
+                } catch {
+                    print(error)
+                }
             }
+            task.resume()
         }
-        task.resume()
     }
     
 }
