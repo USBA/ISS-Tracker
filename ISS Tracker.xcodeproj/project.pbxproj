@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A58C0C42679B657004C54EB /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58C0C32679B657004C54EB /* LoadingView.swift */; };
+		0A58C0C62679BEEF004C54EB /* AboutMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A58C0C52679BEEF004C54EB /* AboutMenu.swift */; };
 		0AA3830F2678CE6D00CE9D94 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3830E2678CE6D00CE9D94 /* BlurView.swift */; };
 		0AD0AFC826784B5F004190BD /* ISS_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFC726784B5F004190BD /* ISS_TrackerApp.swift */; };
 		0AD0AFCA26784B5F004190BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0AFC926784B5F004190BD /* ContentView.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A58C0C32679B657004C54EB /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		0A58C0C52679BEEF004C54EB /* AboutMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMenu.swift; sourceTree = "<group>"; };
 		0AA3830E2678CE6D00CE9D94 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		0AD0AFC426784B5F004190BD /* ISS Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ISS Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD0AFC726784B5F004190BD /* ISS_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISS_TrackerApp.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				0AD0AFDB26788F96004190BD /* PositionDetailsBar.swift */,
 				0AD0AFD926788F80004190BD /* FocusButton.swift */,
 				0AD0AFDF267897C6004190BD /* PeopleButton.swift */,
+				0A58C0C52679BEEF004C54EB /* AboutMenu.swift */,
+				0A58C0C32679B657004C54EB /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,11 +209,13 @@
 				0AD0AFCA26784B5F004190BD /* ContentView.swift in Sources */,
 				0AD0AFDA26788F80004190BD /* FocusButton.swift in Sources */,
 				0AA3830F2678CE6D00CE9D94 /* BlurView.swift in Sources */,
+				0A58C0C42679B657004C54EB /* LoadingView.swift in Sources */,
 				0AD0AFDC26788F96004190BD /* PositionDetailsBar.swift in Sources */,
 				0AD0AFD626785753004190BD /* ISS.swift in Sources */,
 				0AD0AFE0267897C6004190BD /* PeopleButton.swift in Sources */,
 				0AD0AFE52678A164004190BD /* Aboard.swift in Sources */,
 				0AD0AFC826784B5F004190BD /* ISS_TrackerApp.swift in Sources */,
+				0A58C0C62679BEEF004C54EB /* AboutMenu.swift in Sources */,
 				0AD0AFE72678A21A004190BD /* AboardDataViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +354,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Spy on ISS";
 				INFOPLIST_KEY_CFBundleExecutable = "ISS Tracker";
 				INFOPLIST_KEY_CFBundleName = "ISS Tracker";
-				INFOPLIST_KEY_CFBundleVersion = 2;
+				INFOPLIST_KEY_CFBundleVersion = 3;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -381,7 +389,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Spy on ISS";
 				INFOPLIST_KEY_CFBundleExecutable = "ISS Tracker";
 				INFOPLIST_KEY_CFBundleName = "ISS Tracker";
-				INFOPLIST_KEY_CFBundleVersion = 2;
+				INFOPLIST_KEY_CFBundleVersion = 3;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
