@@ -1,6 +1,8 @@
 # ISS-Tracker
 An iOS app to track the current location of the International Space Station (ISS) and the names of people who are currently aboard the ISS.
 
+[![testflight-badge](https://user-images.githubusercontent.com/19838220/122193738-5f1a6d00-ceb2-11eb-89bd-774ed102ea33.png)](https://testflight.apple.com/join/5uxNLrqy)
+
 **Requirements**
 * Xcode 13
 * iOS 14.1 or higher
